@@ -5,7 +5,7 @@ class SqlRunner
   def self.run(sql)
       begin
         db = PG.connect({
-            dbname: 'music_app',
+            dbname: 'record_store',
             host: 'localhost'
           })
         result = db.exec(sql)

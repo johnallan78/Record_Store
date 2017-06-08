@@ -1,22 +1,21 @@
-CREATE TABLE store (
-  id SERIAL8 PRIMARY KEY,
-  FUNDS INT,
-  stock INT
-  
-
-)
+DROP TABLE album;
+DROP TABLE artist;
 
 CREATE TABLE artist (
   id SERIAL8 PRIMARY KEY,
   name VARCHAR(255)
-)
+);
 
 CREATE TABLE album (
 id SERIAL8 PRIMARY KEY,
-name VARCHAR(255),
+title VARCHAR(255),
 artist VARCHAR(255),
 genre VARCHAR(255),
-quantity INT,
+quantity INT
+);
 
-
-)
+CREATE TABLE store (
+  id SERIAL8 PRIMARY KEY,
+  album_id int8 REFERENCES album(id),
+  artist_id int8 REFERENCES artist(id)
+ );

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex; /* this property lets us know that the selector is flexbox. */
+  justify-content: center;
+}
+
+.menu {
+  width: 900px;
+  display: flex ;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.logo{
+  
+}
+
+img {
+  height: 50px;
+  width: 200px;
+}
+
