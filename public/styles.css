@@ -20,8 +20,12 @@
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 
 }
 
+.logo {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px ;
+}
 
