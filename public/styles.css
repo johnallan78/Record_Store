@@ -87,3 +87,20 @@ a {
   flex: 1;
   align-items: center;
 }
+
+.album-container{
+
+  display: flex;
+  justify-content: flex-end;
+  background-color: antiquewhite;
+
+}
+
+.title {
+  font-family: 'Shrikhand', cursive;
+}
+.title-name{
+  font-family: times;
+}
+
+
