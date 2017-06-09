@@ -8,6 +8,7 @@
   color: #fff;
   background-color: #5995DA;  /* Blue */
   padding: 20px 0;
+  margin-top: 15px;
   display: flex; /* this property lets us know that the selector is flexbox. */
   justify-content: center;
 }
@@ -18,14 +19,22 @@
   justify-content: space-between;
 }
 
-.links {
-  display: flex;
-  justify-content: right;
-
-}
-
 .logo {
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px ;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  
 }
 
