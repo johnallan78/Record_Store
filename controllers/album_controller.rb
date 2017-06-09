@@ -4,6 +4,8 @@ require_relative( '../models/album' )
 
 
 get '/album/index' do
-  @album = Album.new()
+  @album = Album.all()
   erb(:"album/index")
 end
+
+
