@@ -4,18 +4,28 @@
   <meta charset="UTF-8">
   <title>Big Al's Record Store</title>
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../button.css">
 </head>
 <body>
 <div class="menu-container">
 <div class="menu">
+<div class="home"><a href="/">Home</a></div>
 <div class="logo">Big Al's Record Store</div>
 </div>
 </div>
 <div class="header-container">
 <div class="header">
+
 </div>
 </div>
 
   <%= yield %>
+  <div class='footer'>
+    <div class='footer-item'><a href="/artist/new">New Artist</a></div>
+    <div class='footer-item'><a href="/album/new">New Album</a></div>
+    <div class='footer-item'><a href="/album/index">Inventory</a></div>
+    <div class='footer-item'>Find</div>
+  </div>
+
 </body>
 </html>

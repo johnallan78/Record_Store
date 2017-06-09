@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+img {
+  height: 280px;
+  width:900px;
+  padding-top: 20px;
+  padding-left: 22px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
 .menu-container {
   color: #fff;
   background-color: #5995DA;  /* Blue */
@@ -20,7 +32,7 @@
 }
 
 .logo {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Shrikhand', cursive;
   font-size: 50px ;
 }
 
@@ -28,13 +40,50 @@
   color: #5995DA;
   background-color: #D6E9FE;
   display: flex;
-  
+  background-image: url(https://s3.amazonaws.com/vf-images/wp-content/uploads/2013/06/vinyl-library.png)
+
 }
 
 .header {
   width: 900px;
   height: 300px;
   display: flex;
+  justify-content: flex-start;
   
 }
 
+.form-container{
+  display: flex;
+  border: 2px solid black;
+}
+
+.index-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+
+}
+
+.index {
+  width: 300px;
+  height: 284px;
+  display: flex;
+  border: 5px solid #D6E9FE;
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  background-image: url("http://www.clker.com/cliparts/w/3/B/W/p/2/solid-color-vinyl-record-small-md.png");
+  color: antiquewhite;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  font-family: 'Shrikhand', cursive;
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+  align-items: center;
+}
