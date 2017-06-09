@@ -11,11 +11,11 @@ end
 
 get '/album/new' do
   @artist = Album.all()
-   erb(:"artist/new")
+   erb(:"album/new")
 end
 
-post '/artists' do
+post '/albums' do
   @artist = Album.new(params)
   @artist.save()
-  erb(:"artist/create")
+  erb(:"album/create")
 end
