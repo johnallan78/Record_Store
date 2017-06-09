@@ -17,5 +17,6 @@ quantity INT
 CREATE TABLE store (
   id SERIAL8 PRIMARY KEY,
   album_id int8 REFERENCES album(id),
-  artist_id int8 REFERENCES artist(id)
+  artist_id int8 REFERENCES artist(id),
+  
  );

@@ -30,6 +30,12 @@ attr_accessor :id, :name
       return Artist.new( results.first )
     end
 
+    def update()
+        sql = " UPDATE artist SET (id, name) = ('#{@id}', '#{@name}' WHERE id = #{@id};"
+        SqlRunner.run(sql)
+      end
+
+
     def self.delete_all
       sql = "DELETE FROM artist"
       SqlRunner.run( sql )

@@ -8,7 +8,7 @@ class Album
     @title = options['title']
     @artist = options['artist']
     @genre = options['genre']
-    @quantity = options['quantity']
+    @quantity = options['quantity'].to_i
   end
 
   def save()
@@ -25,6 +25,12 @@ class Album
     results = SqlRunner.run( sql )
     return results.map { |album| Album.new( album ) }
   end
+
+  def update()
+      sql = " UPDATE album SET (id, title, artist, genre, quantity) = ('#{@id}', '#{@title}', '#{@artist}', '#{@genre}', #{@quantity} WHERE id = #{@id};"
+      SqlRunner.run(sql)
+    end
+
 
   def self.find( id )
     sql = "SELECT * FROM album WHERE id=#{id}"
