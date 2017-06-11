@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+
+
 .big-al {
   font-family: 'Permanent Marker', cursive;
 }
@@ -25,6 +32,9 @@ a {
     display:flex;
     justify-content: center;
     background-color: antiquewhite;
+    font-family: 'Permanent Marker', cursive;
+    
+
 }
 
 .menu-container {
@@ -125,5 +135,9 @@ a {
     display:inline-flex;
     align-items: flex-start;
 
+  }
+
+  .album-header {
+    display:flex;
   }
 

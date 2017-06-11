@@ -1,20 +1,20 @@
-
+<div class="album-header">
 <% albums_in_stock = [] %>
 <% for records in @album %>
 <% albums_in_stock.push(records) %>
 <% end %>
-<p>There are <%= albums_in_stock.count %> albums in stock right now.</p>
-
+<p>There are <em><%= albums_in_stock.count %></em> albums in stock right now.</p>
+</div>
  
 
 
 <% @album.each do |album| %>
 <div class="album-container">
 <ul>
- <p><div id="album-item">Album Title: <%= album.title%></div></p>
-<p><div id="album-item">Artist: <%= album.artist%></div></p>
-<p><div id="album-item">Genre: <%= album.genre %></div></p>
-<p><div id="album-item">Quantity in Stock: <%= album.quantity%></div></p>
+ <p><div id="album-item">Album Title: <em><%= album.title%></em></div></p>
+<p><div id="album-item">Artist: <em><%= album.artist%></em></div></p>
+<p><div id="album-item">Genre: <em><%= album.genre %></em></div></p>
+<p><div id="album-item">Quantity in Stock: <em><%= album.quantity%></em></div></p>
 <hr/></ul>
 
 </div>
