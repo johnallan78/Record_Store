@@ -1,3 +1,14 @@
-.button-submit{
+.button-submit {
+    border:0px none;
+    border-radius: 3%;
+    padding: 8px 12px;
     
+  
+}
+
+.label {
+
+  padding: 8px 12px;
+
+
 }

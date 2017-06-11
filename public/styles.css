@@ -19,14 +19,11 @@ a {
 
 h1 {
     font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    padding-bottom: 10px;
   }
-}
 
 
-
-.big-al {
-  font-family: 'Permanent Marker', cursive;
-}
 
 .home {
     display:flex;
@@ -35,6 +32,12 @@ h1 {
     font-family: 'Permanent Marker', cursive;
     
 
+}
+
+
+.big-al {
+
+  font-family: 'Permanent Marker', cursive;
 }
 
 .menu-container {
@@ -87,12 +90,12 @@ h1 {
 
 .index {
   width: 300px;
-  height: 284px;
+  height: 290px;
   display: flex;
   border: 5px solid #D6E9FE;
   font-family: 'Shrikhand', cursive;
   text-align: center;
-  background-image: url("http://www.clker.com/cliparts/w/3/B/W/p/2/solid-color-vinyl-record-small-md.png");
+  background-image: url("http://www.agentmarketing.co.uk/wp-content/uploads/2016/02/vinyl-2015-collection.jpg");
   color: antiquewhite;
 }
 
@@ -102,6 +105,7 @@ h1 {
 }
 .footer-item {
   font-family: 'Shrikhand', cursive;
+  font-size: 2.2em;
   border: 1px solid #fff;
   background-color: #D6E9FE;
   height: 200px;
@@ -128,13 +132,29 @@ h1 {
     font-family: 'Didact Gothic', sans-serif;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    justify-content: center;
+    margin-left: 42.5%;
+    justify-content: flex-start;
+  }
+
+  .form-container-artist{
+  display: inline-flex;
+  background-color: antiquewhite;
+    font-family: 'Didact Gothic', sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+    justify-content: flex-start;
+    border : 2px solid black;
   }
 
   .form{
     display:inline-flex;
-    align-items: flex-start;
+    justify-content: center;
 
+  }
+
+  .album-container{
+    padding-bottom: 5px;
   }
 
   .album-header {
