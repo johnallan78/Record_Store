@@ -17,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+.home {
+    display:flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
 .menu-container {
   color: #fff;
   background-color: #5995DA;  /* Blue */
