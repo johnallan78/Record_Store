@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 img {
@@ -28,7 +29,7 @@ a {
 .menu {
   width: 900px;
   display: flex ;
-  justify-content: space-between;
+  
 }
 
 .logo {
@@ -89,18 +90,30 @@ a {
 }
 
 .album-container{
-
   display: flex;
-  justify-content: flex-end;
   background-color: antiquewhite;
-
+  justify-content: space-between;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
-.title {
-  font-family: 'Shrikhand', cursive;
-}
-.title-name{
-  font-family: times;
+.album-item {
+  display: flex;
+  align-items: flex-start;
+ 
 }
 
+.form-container {
+  display: inline-flex;
+  background-color: antiquewhite;
+    font-family: 'Didact Gothic', sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .form{
+    display:inline-flex;
+    align-items: flex-start;
+
+  }
 

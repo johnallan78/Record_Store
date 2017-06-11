@@ -19,3 +19,8 @@ post '/albums' do
   @album.save()
   erb(:"album/create")
 end
+
+get '/albums/show' do 
+  @albums = Album.all()
+  erb(:"album/show")
+end

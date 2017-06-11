@@ -1,10 +1,11 @@
 <% @album.each do |album| %>
 <div class="album-container">
- <p><div id="title">Album Title:</div><div id="title-name"><%= album.title%></div></p>
-<p><div id="artist">Artist:</div><div id="artist-name"> <%= album.artist%></div></p>
-<p><div id="genre">Genre:</div><div id="genre-name"> <%= album.genre %></div></p>
-<p><div id="quantity">Quantity in Stock:</div><div id="quantity-name"> <%= album.quantity%></div></p>
-<hr/>
+<ul>
+ <p><div id="album-item">Album Title: <%= album.title%></div></p>
+<p><div id="album-item">Artist:<%= album.artist%></div></p>
+<p><div id="album-item">Genre:<%= album.genre %></div></p>
+<p><div id="album-item">Quantity in Stock:<%= album.quantity%></div></p>
+<hr/></ul>
 </div>
 
 <% end %>

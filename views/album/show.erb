@@ -1,0 +1,15 @@
+<h1>Running Low</h1>
+
+<div class="album-container">
+<h3>Warning: The following items are currently running low in stock:</h3>
+</div>
+<% for album in @albums %>
+<% if album.quantity <= 2 %>
+<%= album.title%>
+<%= album.artist%>
+<%= album.quantity%>
+
+
+
+<%end %>
+<%end %>
