@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+.big-al {
+  font-family: 'Permanent Marker', cursive;
+}
+
 .home {
     display:flex;
     justify-content: center;
@@ -39,7 +43,7 @@ a {
 }
 
 .logo {
-  font-family: 'Shrikhand', cursive;
+  
   font-size: 50px ;
 }
 

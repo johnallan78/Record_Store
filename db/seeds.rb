@@ -45,6 +45,10 @@ artist18 = Artist.new({'name' => 'Jamiroquai' })
 artist18.save()
 artist19 = Artist.new({'name' => 'Lunasa' })
 artist19.save()
+artist20 = Artist.new({'name' => 'Keith Jarrett' })
+artist20.save()
+artist21 = Artist.new({'name' => 'The White Stripes' })
+artist21.save()
 
 
 
@@ -68,7 +72,7 @@ album8 = Album.new({'title' => 'Mingus x 5','artist' => artist17.name,'genre' =>
 album8.save()
 album9 = Album.new({'title' => 'Songs For The Deaf','artist' => artist15.name,'genre' => 'Heavy Rock','quantity' => 2})
 album9.save()
-album10 = Album.new({'title' => 'The Kinnity Sessions','artist' => artist18.name,'genre' => 'Folk','quantity' => 3})
+album10 = Album.new({'title' => 'The Kinnity Sessions','artist' => artist19.name,'genre' => 'Folk','quantity' => 3})
 album10.save()
 album11 = Album.new({'title' => 'Tinseltown Rebellion','artist' => artist14.name,'genre' => '60s Rock','quantity' => 3})
 album11.save()
@@ -80,6 +84,10 @@ album14 = Album.new({'title' => 'Whos Feeling Young Now?','artist' => artist12.n
 album14.save()
 album15 = Album.new({'title' => 'Echoes','artist' => artist11.name,'genre' => 'Rock','quantity' => 3})
 album15.save()
+album16 = Album.new({'title' => 'Standards Vol 1','artist' => artist20.name,'genre' => 'Jazz','quantity' => 6})
+album16.save()
+album17 = Album.new({'title' => 'Elephant','artist' => artist21.name,'genre' => 'Rock','quantity' => 3})
+album17.save()
 
 
 
