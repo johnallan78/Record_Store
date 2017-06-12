@@ -8,6 +8,7 @@ attr_accessor :id, :name
     @name = options['name']
 
   end
+  
 
     def save()
       sql = "INSERT INTO artist
