@@ -2,19 +2,21 @@ require_relative '../db/sql_runner'
 
 class Album
 
-  attr_accessor :id, :title, :artist, :genre, :quantity
+  attr_accessor :id, :title, :artist, :genre, :quantity, :buy, :sell
   def initialize(options)
     @id = options['id'].to_i if options['id']
     @title = options['title']
     @artist = options['artist']
     @genre = options['genre']
     @quantity = options['quantity'].to_i
+    @buy = options['buy'].to_i
+    @sell = options['sell'].to_i
   end
 
   def save()
     sql = "INSERT INTO album
-            (artist, title, genre, quantity)
-            VALUES ('#{@artist}', '#{@title}', '#{@genre}', #{@quantity}) 
+            (artist, title, genre, quantity, buy, sell)
+            VALUES ('#{@artist}', '#{@title}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell}) 
             RETURNING * ;"
             result = SqlRunner.run(sql)
             @id = result[0]['id'].to_i
@@ -34,7 +36,7 @@ class Album
   end
 
   def update()
-      sql = " UPDATE album SET (id, title, artist, genre, quantity) = ('#{@id}', '#{@title}', '#{@artist}', '#{@genre}', #{@quantity} WHERE id = #{@id};"
+      sql = " UPDATE album SET (id, title, artist, genre, quantity, buy, sell) = ('#{@id}', '#{@title}', '#{@artist}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell} WHERE id = #{@id};"
       SqlRunner.run(sql)
   end
 

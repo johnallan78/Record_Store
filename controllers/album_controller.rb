@@ -27,4 +27,7 @@ get '/albums/show' do
   erb(:"album/show")
 end
 
-
+get '/albums/prices' do
+  @albums = Album.all()
+  erb(:"album/prices")
+end
