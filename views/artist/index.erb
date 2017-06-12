@@ -1,5 +1,8 @@
 <h1> Artist Index </h1>
 
+
+<div class="artist-index-container">
 <% @artist.each do |artist| %>
-  <%= artist.name %><br>
+ <div class="artist-index-item"><%= artist.name %><br></div>
   <%end%>
+  </div>
