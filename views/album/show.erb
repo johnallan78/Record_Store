@@ -6,7 +6,7 @@
 <% for album in @albums %>
 <% if album.quantity <= 2 %>
 <%= album.title%> -
-<em><%= album.artist%>:</em>
+<em><%= album.artist.name%>:</em>
 <%= album.quantity%><br>
 <%end %>
 <%end %>
@@ -16,7 +16,7 @@
 <% for album in @albums %>
 <% if album.quantity <= 5 && album.quantity > 2 %>
 <%= album.title%> -
-<em><%= album.artist%>:</em>
+<em><%= album.artist.name%>:</em>
 <%= album.quantity%><br>
 <%end %>
 <%end %>
@@ -26,7 +26,7 @@
 <% for album in @albums %>
 <% if album.quantity > 5 %>
 <%= album.title%> -
-<em><%= album.artist%>:</em>
+<em><%= album.artist.name%>:</em>
 <%= album.quantity%><br>
 <%end %>
 <%end %>

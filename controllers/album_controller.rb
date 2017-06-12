@@ -1,6 +1,7 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require_relative( '../models/album' )
+require_relative( '../models/artist' )
 
 
 get '/album/index' do
@@ -11,6 +12,7 @@ end
 
 get '/album/new' do
   @album = Album.all()
+  @artist = Artist.all()
    erb(:"album/new")
 end
 
