@@ -12,6 +12,6 @@ title VARCHAR(255),
 artist int8 REFERENCES artist(id),
 genre VARCHAR(255),
 quantity INT,
-buy int,
-sell int
+buy decimal,
+sell decimal
 );

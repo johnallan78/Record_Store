@@ -9,8 +9,8 @@ class Album
     @artist = options['artist']
     @genre = options['genre']
     @quantity = options['quantity'].to_i
-    @buy = options['buy'].to_i
-    @sell = options['sell'].to_i
+    @buy = options['buy'].to_f
+    @sell = options['sell'].to_f
   end
 
   def save()
