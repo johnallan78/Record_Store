@@ -9,13 +9,13 @@
 
 
 <% @album.each do |album| %>
+<ol>
 <div class="album-container">
-<ul>
- <p><div id="album-item">Album Title: <em><%= album.title%></em></div></p>
-<p><div id="album-item">Artist: <em><%= album.artist.name%></em></div></p>
-<p><div id="album-item">Genre: <em><%= album.genre %></em></div></p>
-<p><div id="album-item">Quantity in Stock: <em><%= album.quantity%></em></div></p>
-<hr/></ul>
+
+ <div id="album-item"> Album:<em><%= album.title %>&nbsp;&nbsp;&nbsp;</em></div>
+<div id="album-item">Artist:<em><%= album.artist.name%>&nbsp;&nbsp;&nbsp;</em></div>
+<div id="album-item">Quantity in Stock: <em><%= album.quantity%></em></div>
+</ol>
 
 </div>
 <% end %>

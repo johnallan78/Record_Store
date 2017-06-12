@@ -79,6 +79,7 @@ h1 {
 .form-container{
   display: flex;
   border: 2px solid black;
+  padding: 5px;
 }
 
 .index-container{
@@ -116,13 +117,15 @@ h1 {
 .album-container{
   display: flex;
   background-color: antiquewhite;
-  justify-content: space-between;
+  justify-content: center;
   font-family: 'Didact Gothic', sans-serif;
+
+
 }
 
 .album-item {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
  
 }
 
@@ -132,7 +135,7 @@ h1 {
     font-family: 'Didact Gothic', sans-serif;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    margin-left: 42.5%;
+    margin-left: 40%;
     justify-content: flex-start;
   }
 
@@ -140,9 +143,9 @@ h1 {
   display: inline-flex;
   background-color: antiquewhite;
     font-family: 'Didact Gothic', sans-serif;
-    padding-bottom: 20px;
+    padding: 5px;
     margin-bottom: 20px;
-    margin-left: 45%;
+    margin-left: 44.5%;
     justify-content: flex-start;
     border : 2px solid black;
   }
@@ -160,6 +163,8 @@ h1 {
   .album-container-item {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Didact Gothic', sans-serif;
+
   }
 
   .album-header {
@@ -181,7 +186,7 @@ h1 {
   background-color: antiquewhite;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Shrikhand', cursive;
   text-align: center;
 
 }
