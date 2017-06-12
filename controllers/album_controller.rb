@@ -24,3 +24,5 @@ get '/albums/show' do
   @albums = Album.all()
   erb(:"album/show")
 end
+
+

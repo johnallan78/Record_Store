@@ -13,8 +13,13 @@ get '/artist/new' do
    erb(:"artist/new")
 end
 
-post '/artist' do
+post '/artists' do
   @artist = Artist.new(params)
   @artist.save()
   erb(:"artist/create")
+end
+
+get '/artist/show' do
+  @artist = Artist.all()
+  erb(:"artist/show")
 end
