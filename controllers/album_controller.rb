@@ -31,3 +31,7 @@ get '/albums/prices' do
   @albums = Album.all()
   erb(:"album/prices")
 end
+
+get '/links' do
+  erb(:"links")
+end
