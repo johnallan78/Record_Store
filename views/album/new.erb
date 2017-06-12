@@ -8,7 +8,7 @@
   <br><label for="artist"> Select Artist</label>
   <select name="artist" id="artist">
   <% for artist in @artist %>
-  <option value= "<% artist.name %>"><%=artist.name%></option>
+  <option value= "<%= artist.id %>"><%=artist.name%></option>
   <% end %>
 
   </select>
@@ -17,15 +17,17 @@
   <select name="genre" id="genre">
 
       <option value="Rock">Rock</option>
-      <option value="Funk">Funk</option>
+      <option value="Pop">Pop</option>
+      <option value="R&B">R&B</option>
       <option value="Soul">Soul</option>
       <option value="Jazz">Jazz</option> 
       <option value="Bluegrass">Bluegrass</option> 
       <option value="60s Rock">60s Rock</option> 
       <option value="Prog Rock">Prog Rock</option> 
+      <option value="Hard Rock">Hard Rock</option> 
       <option value="Folk">Folk</option> 
       <option value="Country">Country</option> 
-      <option value="Classical">Classical</option> 
+      <option value="Classical">Classical</option>  
      
   </select>
  
