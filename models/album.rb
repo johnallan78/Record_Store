@@ -45,8 +45,6 @@ class Album
       SqlRunner.run(sql)
   end
 
-
-
   def self.delete_all
     sql = "DELETE FROM album"
     SqlRunner.run( sql )
@@ -57,11 +55,5 @@ class Album
     return '%.2f'% markup.to_f()
 
   end
-
-
-
-
-
-
 end
 
