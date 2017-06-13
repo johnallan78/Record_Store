@@ -7,7 +7,7 @@
  <div id="album-item"> Album: &nbsp;<em><%= album.title %>&nbsp;&nbsp;&nbsp;</em></div>
 <div id="album-item">Buy Price: £<%= album.buy %>&nbsp;&nbsp;&nbsp;</div>
 <div id="album-item">Sell Price: £<%= album.sell %>&nbsp;&nbsp;&nbsp;</div>
-<div class="markup-item">MarkUp: £<% markup = album.sell - album.buy %><%= '%.2f'% markup.to_f()%>
+<div class="markup-item">MarkUp: £<%= album.markup %>
   
 </div>
 

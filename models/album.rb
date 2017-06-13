@@ -57,6 +57,12 @@ class Album
     SqlRunner.run( sql )
   end
 
+  def markup()
+    markup = @sell - @buy 
+    return '%.2f'% markup.to_f()
+
+  end
+
 
 
 
