@@ -71,24 +71,7 @@ album7 = Album.new({'title' => 'This Is Jazz','artist' => @artist17.id,'genre' =
 album7.save()
 album8 = Album.new({'title' => 'Mingus x 5','artist' => @artist17.id,'genre' => 'Jazz','quantity' => 1, 'buy' => 3.96, 'sell' =>8.99 })
 album8.save()
-# album9 = Album.new({'title' => 'Songs For The Deaf','artist' => @artist15.id,'genre' => 'Heavy Rock','quantity' => 2})
-# album9.save()
-# album10 = Album.new({'title' => 'The Kinnity Sessions','artist' => @artist19.id,'genre' => 'Folk','quantity' => 3})
-# album10.save()
-# album11 = Album.new({'title' => 'Tinseltown Rebellion','artist' => @artist14.id,'genre' => '60s Rock','quantity' => 3})
-# album11.save()
-# album12 = Album.new({'title' => 'The Rhythm of the Saints','artist' => @artist16.id,'genre' => 'Pop','quantity' => 5})
-# album12.save()
-# album13 = Album.new({'title' => 'Sex Machine','artist' => @artist13.id,'genre' => 'R&B','quantity' => 2})
-# album13.save()
-# album14 = Album.new({'title' => 'Whos Feeling Young Now?','artist' => @artist12.id,'genre' => 'Bluegrass','quantity' => 3})
-# album14.save()
-# album15 = Album.new({'title' => 'Echoes','artist' => @artist11.id,'genre' => 'Rock','quantity' => 3})
-# album15.save()
-# album16 = Album.new({'title' => 'Standards Vol 1','artist' => @artist20.id,'genre' => 'Jazz','quantity' => 6})
-# album16.save()
-# album17 = Album.new({'title' => 'Elephant','artist' => @artist21.id,'genre' => 'Rock','quantity' => 3})
-# album17.save()
+
 
 
 
