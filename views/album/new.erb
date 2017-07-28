@@ -1,6 +1,6 @@
-<h1>Add a new Album</h1>
+<h1>Add Album</h1>
 
-<div class="form-container">
+<!-- <div class="form-container">
 <form action="/albums" method="post">
   
  <br><label for="title">Title</label>
@@ -8,8 +8,8 @@
   <br><label for="artist"> Select Artist</label>
   <select name="artist" id="artist">
   <% for artist in @artist %>
-  <option value= "<%= artist.id %>"><%=artist.name%></option>
-  <% end %>
+    <option value= "<%= artist.id %>"><%=artist.name%></option>
+    <% end %>
 
   </select>
 
@@ -41,4 +41,48 @@
 
  <br><div class="button-submit"><input type="submit" value="Add This Album!"></div>
 </form>
-</div>
+</div> -->
+
+
+
+<div class="form-style-2">
+<div class="form-style-2-heading">Add A New Album</div>
+<form action="/albums" method="post">
+<label for="title"><span>Title <span class="required">*</span></span><input type="text" class="input-field" name="title" value="" /></label>
+<label for="artist"><span>Artist <span class="required">*</span></span><input type="text" class="input-field" name="artist" value="" /></label>
+<select name="artist" id="artist">
+<% for artist in @artist %>
+<option value= "<%= artist.id %>"><%=artist.name%></option>
+<% end %>
+</select>
+<br><label for="genre">Select Genre</label>
+<select name="genre" id="genre">
+
+    <option value="Rock">Rock</option>
+    <option value="Pop">Pop</option>
+    <option value="R&B">R&B</option>
+    <option value="Soul">Soul</option>
+    <option value="Jazz">Jazz</option> 
+    <option value="Bluegrass">Bluegrass</option> 
+    <option value="60s Rock">60s Rock</option> 
+    <option value="Prog Rock">Prog Rock</option> 
+    <option value="Hard Rock">Hard Rock</option> 
+    <option value="Folk">Folk</option> 
+    <option value="Country">Country</option> 
+    <option value="Classical">Classical</option>  
+   
+</select>
+
+
+
+<label for="quantity"><span>Quantity<span class="required">*</span></span><input type="number" class="input-field" id="quantity" name="quantity" value=""/></label>
+
+  <br><label for="buy">Wholesale Price (£)</label>
+    <input type="decimal" id ="buy" name="buy">
+<br><label for="sell">Retail Price (£)</label>
+    <input type="decimal" id ="sell" name="sell">
+
+    <br><div class="button-submit"><input type="submit" value="Add This Album!"></div>
+    </form>
+    </div>
+
