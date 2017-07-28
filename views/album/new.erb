@@ -1,6 +1,43 @@
 <h1>Add Album</h1>
 
-<div class="form-container">
+<div class="form-style-3">
+<form action="/albums" method="post">
+<fieldset><legend>Details</legend>
+<label for="title"><span>Title <span class="required">*</span></span><input type="text" class="input-field" id="title" required="true" name="title value="" /></label>
+<label for="artist"><span>Artist <span class="required">*</span></span><select name="genre" class="select-field">
+<% for artist in @artist %>
+  <option value= "<%= artist.id %>"><%=artist.name%></option>
+  <% end %>
+  </select></label>
+<label for="quantity"><span>Quantity <span class="required">*</span></span><input type="number" class="input-field" id="quantity" required="true" name="quantity" min="1" value="" /></label>
+<label for="buy"><span>Buy Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="buy" required="true" name="buy"  value="" /></label>
+<label for="sell"><span>Sell Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="sell" required="true" name="sell"  value="" /></label>
+<label for="url"><span>Album Url </span><input type="url"  class="input-field" id="url"  name="url"  value="" /></label>
+
+
+
+
+<label for="genre"><span>Genre</span><select name="genre" class="select-field">
+<option value="Rock">Rock</option>
+      <option value="Pop">Pop</option>
+      <option value="R&B">R&B</option>
+      <option value="Soul">Soul</option>
+      <option value="Jazz">Jazz</option> 
+      <option value="Bluegrass">Bluegrass</option> 
+      <option value="60s Rock">60s Rock</option> 
+      <option value="Prog Rock">Prog Rock</option> 
+      <option value="Hard Rock">Hard Rock</option> 
+      <option value="Folk">Folk</option> 
+      <option value="Country">Country</option> 
+      <option value="Classical">Classical</option>
+</select></label>
+</fieldset>
+<fieldset><input type="submit" value="Submit" /></label>
+</fieldset>
+</form>
+</div>
+
+<!-- <div class="form-container">
 <form action="/albums" method="post">
   
  <br><label for="title">Title</label>
@@ -41,6 +78,6 @@
 
  <br><div class="button-submit"><input type="submit" value="Add This Album!"></div>
 </form>
-</div>
+</div> -->
 
 
