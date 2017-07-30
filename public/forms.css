@@ -9,7 +9,7 @@
 .form-style-3 label > span{
     float: left;
     width: 100px;
-    color: #F072A9;
+    color: #F072A9; /* PINK! */
     font-weight: bold;
     font-size: 13px;
     text-shadow: 1px 1px 1px #fff;

@@ -13,5 +13,6 @@ artist int8 REFERENCES artist(id),
 genre VARCHAR(255),
 quantity INT,
 buy decimal,
-sell decimal
+sell decimal,
+url VARCHAR(255)
 );

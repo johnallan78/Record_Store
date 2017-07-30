@@ -3,21 +3,21 @@
 <div class="form-style-3">
 <form action="/albums" method="post">
 <fieldset><legend>Details</legend>
-<label for="title"><span>Title <span class="required">*</span></span><input type="text" class="input-field" id="title" required="true" name="title value="" /></label>
-<label for="artist"><span>Artist <span class="required">*</span></span><select name="genre" class="select-field">
+<label for="title"><span>Title <span class="required">*</span></span><input type="text" class="input-field" id="title" required="true" name="title" ></label>
+<label for="artist"><span>Artist <span class="required">*</span></span><select name="artist" class="select-field" id="artist">
 <% for artist in @artist %>
   <option value= "<%= artist.id %>"><%=artist.name%></option>
   <% end %>
   </select></label>
-<label for="quantity"><span>Quantity <span class="required">*</span></span><input type="number" class="input-field" id="quantity" required="true" name="quantity" min="1" value="" /></label>
-<label for="buy"><span>Buy Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="buy" required="true" name="buy"  value="" /></label>
-<label for="sell"><span>Sell Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="sell" required="true" name="sell"  value="" /></label>
-<label for="url"><span>Album Url </span><input type="url"  class="input-field" id="url"  name="url"  value="" /></label>
+<label for="quantity"><span>Quantity <span class="required">*</span></span><input type="number" class="input-field" id="quantity" required="true" name="quantity" min="1"  /></label>
+<label for="buy"><span>Buy Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="buy" required="true" name="buy"   /></label>
+<label for="sell"><span>Sell Price <span class="required">*</span></span><input type="number" step="0.01" min="0.01" class="input-field" id="sell" required="true" name="sell"   /></label>
+<label for="url"><span>Album Url </span><input type="text"  class="input-field" id="url"  name="url"   /></label>
 
 
 
 
-<label for="genre"><span>Genre</span><select name="genre" class="select-field">
+<label for="genre"><span>Genre</span><select name="genre" id="genre" class="select-field">
 <option value="Rock">Rock</option>
       <option value="Pop">Pop</option>
       <option value="R&B">R&B</option>

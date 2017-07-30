@@ -2,7 +2,7 @@ require_relative '../db/sql_runner'
 
 class Album
 
-  attr_accessor :id, :title, :artist, :genre, :quantity, :buy, :sell
+  attr_accessor :id, :title, :artist, :genre, :quantity, :buy, :sell, :url
   def initialize(options)
     @id = options['id'].to_i if options['id']
     @title = options['title']
@@ -11,12 +11,13 @@ class Album
     @quantity = options['quantity'].to_i
     @buy = options['buy'].to_f
     @sell = options['sell'].to_f
+    @url = options['url']
   end
 
   def save()
     sql = "INSERT INTO album
-            (artist, title, genre, quantity, buy, sell)
-            VALUES ('#{@artist}', '#{@title}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell}) 
+            (artist, title, genre, quantity, buy, sell, url)
+            VALUES ('#{@artist}', '#{@title}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell}, '#{@url}') 
             RETURNING * ;"
             result = SqlRunner.run(sql)
             @id = result[0]['id'].to_i
@@ -36,7 +37,7 @@ class Album
   end
 
   def update()
-      sql = " UPDATE album SET (id, title, artist, genre, quantity, buy, sell) = ('#{@id}', '#{@title}', '#{@artist}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell} WHERE id = #{@id};"
+      sql = " UPDATE album SET (id, title, artist, genre, quantity, buy, sell, url) = ('#{@id}', '#{@title}', '#{@artist}', '#{@genre}', #{@quantity}, #{@buy}, #{@sell}, '#{@url}' WHERE id = #{@id};"
       SqlRunner.run(sql)
   end
 
