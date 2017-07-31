@@ -23,3 +23,8 @@ get '/artist/show' do
   @artist = Artist.all()
   erb(:"artist/show")
 end
+
+get '/artist/form' do
+  @artist = Artist.all()
+  erb(:"artist/form")
+end
