@@ -24,7 +24,3 @@ get '/artist/show' do
   erb(:"artist/show")
 end
 
-get '/artist/form' do
-  @artist = Artist.all()
-  erb(:"artist/form")
-end

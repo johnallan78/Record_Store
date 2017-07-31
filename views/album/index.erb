@@ -9,14 +9,14 @@
 
 
 <% @album.each do |album| %>
-<ol>
-<div class="album-container">
 
- <div id="album-item"> Album:<em><%= album.title %>&nbsp;&nbsp;&nbsp;</em></div>
-<div id="album-item">Artist:<em><%= album.artist.name%>&nbsp;&nbsp;&nbsp;</em></div>
-<div id="album-item">Url:<em><%= album.url%>&nbsp;&nbsp;&nbsp;</em></div>
-</ol>
-
-</div>
+<div>
+  <ul>
+    <li>
+      <img class="album-cover" src="<%= album.url%>" alt="<%= album.title %>"/>
+      <h3><%= album.title %></h3>
+      <p><%= album.artist.name%></p>
+    </li>
+    </ul>
+  </div>
 <% end %>
-
