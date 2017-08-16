@@ -9,6 +9,9 @@ Links to Screenshots:
 
 Stock Check:
 https://user-images.githubusercontent.com/26144387/29376415-670dc4d2-82b0-11e7-9c2f-786b0ee2bf04.png
+
 Add Album Form:
 https://user-images.githubusercontent.com/26144387/29376420-6a75a0ea-82b0-11e7-9935-05703d017d67.png
+
 Add Artist Form:
+https://user-images.githubusercontent.com/26144387/29376427-702f27fe-82b0-11e7-9fbe-8f5d39ee7920.png
